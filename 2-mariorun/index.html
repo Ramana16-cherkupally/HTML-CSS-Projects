@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Mario Run</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .running {
+            height: 100vh;
+            background-image: url("332872.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            
+            position: absolute;
+            bottom: 4%;
+            animation-name: mariorun;
+            animation-timing-function: linear;
+            animation-duration: 8s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes mariorun {
+            0% {
+                transform: translateX(-10%);
+            }
+
+            100% {
+                transform: translateX(100vw);
+            }
+        }
+
+        @media (max-width: 576px) {
+            img {
+                width: 25%;
+                bottom: 34%;
+            }
+            .running {
+             background-size: contain; 
+            
+    }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="running container">
+        <img class="img-fluid" src="spoooooooooooooooooorts.gif" alt="running mario">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
