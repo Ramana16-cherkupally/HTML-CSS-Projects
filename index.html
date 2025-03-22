@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 40rem;
+            aspect-ratio: 1;
+            background-color: rgb(245, 245, 10);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: skychange 10s ease-in-out infinite;
+           
+
+        }
+        @keyframes skychange{
+            0%{
+                background-color: rgb(240, 240, 6);
+            }
+            25%{
+                background-color: #7e7e18;
+            }
+            50%{
+                background-color: rgb(5, 5, 5);
+            }
+            75%{
+                background-color: #7e7e18;
+            }
+            100%{
+                background-color: yellow;
+            }
+        }
+        .sub-container{
+            width: 300px;
+            aspect-ratio: 1;
+            background-color: rgba(252, 53, 53, 0.822);
+            position: relative;
+             /* top: 50%;
+             left: 50%;
+             transform: translate(-50%,-50%); */
+            border-radius: 50%;
+            overflow: hidden;
+            
+        }
+        .sub-container::after{
+            content: "";
+            position: absolute;
+            width: inherit;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            background-color: black;
+            animation: moonwalk 10s ease-in-out infinite;
+        }
+        @keyframes moonwalk{
+            0%{
+                transform: translate(100%);
+                scale: 1;
+               
+            }
+            50%{
+                transform: translate(0%);
+                scale: 0.98;
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            }
+            100%{
+                transform: translate(-100%);
+                scale: 1;
+            }
+          
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sub-container"></div>
+    </div>
+</body>
+</html>
