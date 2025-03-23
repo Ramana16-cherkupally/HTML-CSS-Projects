@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>displayGrid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: jost;
+        }
+        body{
+       background-color: rgb(235, 230, 230);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            
+        }
+
+        section{
+            width: 80%;
+            margin: 100px auto;
+            box-shadow: rgba(0, 0, 0,0.25) 0px 54px 55px;
+            color: rgb(245, 6, 6);
+            display: grid;
+            grid-template-rows: 250px 250px;  /*height and width*/
+            grid-template-columns: 1fr 1fr 1fr;
+           gap: 20px;
+
+        }
+        div{
+            font-weight: 50px;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: grid;
+            place-content: center;
+            
+
+          
+        }
+        .item1{
+            background-color: hsla(135, 69%, 40%, 0.39);
+        }
+        .item2{
+            background-color: rgba(255, 72, 0, 0.438);
+        }
+        .item3{
+            background-color: hsla(0, 57%, 19%, 0.651);
+        }
+        .item4{
+            background-color: rgba(247, 253, 248, 0.507);
+        }
+         .item5{
+            background-color: rgba(187, 255, 0, 0.555);
+        }
+        .item6{
+            background-color: rgba(240, 248, 217, 0.137);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="item1">home</div> 
+        <div class="item2">about</div>
+        <div class="item3">services</div>
+        <div class="item4">address</div>
+        <div class="item5">contact</div>
+        <div class="item6">email</div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>textreval</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+       }
+       h1{
+        color: aliceblue;
+        text-transform: uppercase;
+        font-size: 100px;
+        position: relative;
+        overflow: hidden;
+        
+       }
+       h1::after{
+        content: "subscribe...";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 80%;
+        color: rgb(206, 206, 16);
+        text-transform: uppercase;
+        border-right: 2px solid rgb(206, 206, 30);
+        overflow: hidden;
+        animation: textreval 4s linear infinite alternate;
+       }
+       @keyframes textreval{
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 100%;
+        }
+        100%{
+            width: 0;
+        }
+       }
+    </style>
+</head>
+<body>
+    <h1>subscribe...</h1>
+</body>
+</html>
